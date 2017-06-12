@@ -37,8 +37,8 @@ services:
       # - ./docker/db/data:/var/lib/mysql:rw
   nginx:
     build:
-      context: ./docker/nginx
-      dockerfile: ./Dockerfile
+      context: ./
+      dockerfile: ./Dockerfile.nginx
     volumes:
       # Comment out the next line in production
       - ./docker/nginx/conf.d:/etc/nginx/conf.d:ro

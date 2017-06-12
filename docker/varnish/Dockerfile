@@ -6,4 +6,6 @@ COPY start.sh /usr/local/bin/docker-app-start
 
 RUN chmod +x /usr/local/bin/docker-app-start
 
+COPY conf/default.vcl /etc/varnish/default.vcl
+
 CMD ["docker-app-start"]
